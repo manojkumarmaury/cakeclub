@@ -390,13 +390,20 @@ ol {
 .header__logo {
   position: absolute;
   left: 50%;
-  top: 25px;
+  top: 10px;
   margin-left: -60px;
+  /* background-color: #000; */
 }
 .header__logo a {
   display: inline-block;
+  width:200px;
+  height:80px;
 }
-
+.header__logo a img{
+  width:200px;
+  height:80px;
+  object-fit: cover;
+}
 
 .header__top__right {
   float: right;
