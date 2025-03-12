@@ -396,12 +396,14 @@ ol {
 }
 .header__logo a {
   display: inline-block;
- 
+  width:200px;
+  height: auto;
 }
 .header__logo a img{
-  width:200px;
-  height:auto;
-  aspect-ratio: 6/2;
+  width: 100px;
+  height: auto;
+  aspect-ratio: 2/2;
+  object-fit: contain;
 }
 
 .header__top__right {
