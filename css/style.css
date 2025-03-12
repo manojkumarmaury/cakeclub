@@ -205,6 +205,7 @@ ol {
   z-index: 999999;
   background: #000;
 }
+
 .loader {
   width: 40px;
   height: 40px;
@@ -673,17 +674,27 @@ ol {
 
 /* start why choose */
 .choose__main__card {
+  padding: 10px;
   text-align: justify;
-  background-color: white;
+  background-color: #FFFFFF;
+  border-radius: 10px;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
+  z-index: -1111;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-/* .choose__main__card:hover{
-  background-color: rgba(17, 17, 17, 0.1);
-} */
+
+.choose__main__card:hover{
+  scale: 1.1;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .choose-icon {
   width: 70px;
   padding: 2px;
@@ -697,6 +708,11 @@ ol {
 
 .choose__box__title {
   color: var(--primary);
+  font-weight: 800;
+}
+
+.choose-text {
+  color: #000000;
   font-weight: 500;
 }
 
@@ -3681,6 +3697,15 @@ ol {
   .blog__details__recipe {
     padding: 25px 40px 20px;
   }
+
+  /* start why-choose */
+  .choose__box__title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  /* end why-choose */
+
 }
 
 /* Tablet Device = 768px */
@@ -3846,7 +3871,7 @@ ol {
 
   /* start why-choose */
   .choose__box__title {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   /* end why-choose */
