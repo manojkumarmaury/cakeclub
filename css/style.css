@@ -94,6 +94,12 @@ textarea:focus {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--primary);
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -189,6 +195,7 @@ ol {
 }
 
 /* Preloder */
+
 #preloder {
   position: fixed;
   width: 100%;
@@ -198,7 +205,6 @@ ol {
   z-index: 999999;
   background: #000;
 }
-
 .loader {
   width: 40px;
   height: 40px;
@@ -667,22 +673,55 @@ ol {
 
 /* start why choose */
 .choose__main__card {
+  text-align: justify;
   background-color: white;
-  box-shadow: 2px 4px 8px rgba(17, 17, 17, 0.3);
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
+/* .choose__main__card:hover{
+  background-color: rgba(17, 17, 17, 0.1);
+} */
+.choose-icon {
+  width: 70px;
+  padding: 2px;
+  border: 2px solid var(--primary);
+  aspect-ratio: 2/2;
+}
 
-.choose__main__card:hover {
-  box-shadow: none;
+.choose-icon img {
+  aspect-ratio: 2/2;
 }
 
 .choose__box__title {
   color: var(--primary);
   font-weight: 500;
+}
+
+.choose_card-btn {
+  color: var(--primary);
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+
+
+.choose_card-btn:hover {
+  color: #FFFFFF;
+  padding: 3px 5px;
+  background-color: var(--primary);
 }
 
 .apply__franchiese__btn {
