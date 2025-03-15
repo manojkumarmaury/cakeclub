@@ -233,3 +233,25 @@
       });
 
 })(jQuery);
+
+
+// document.querySelector(".navbar-toggler").addEventListener("click", function() {
+//     let navbar = document.querySelector("#navbarSupportedContent");
+//     navbar.classList.toggle("show");
+// });
+
+
+// document.querySelector(".navbar-toggler").addEventListener("click", function() {
+//     let navbar = document.querySelector("#navbarSupportedContent");
+//     navbar.classList.toggle("collapse");
+// });
+document.querySelector(".navbar-toggler").addEventListener("click", function() {
+    let navbar = document.querySelector("#navbarSupportedContent");
+
+    // Toggle only the 'show' class
+    navbar.classList.toggle("show");
+});
+document.querySelector(".close-navbar").addEventListener("click", function() {
+    document.querySelector("#navbarSupportedContent").classList.remove("show");
+});
+
