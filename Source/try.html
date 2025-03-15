@@ -1,139 +1,283 @@
- <!-- First Level Dropdown -->
-            <li class="nav-item py-3 dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Product <span><i class="fa-solid fa-angle-down"></i></span>
-              </a>
-              <div
-                class="dropdown-menu px-3 w-auto"
-                aria-labelledby="navbarDropdown"
-              >
-                <div
-                  class="d-flex d-lg-flex justify-content-between d-sm-block d-block pb-3"
-                >
-                  <a
-                    class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                    href="#"
-                  >
-                    <div class="menudrop-icon">
-                      <img
-                        src="img/icon/man.webp"
-                        width="50"
-                        height:50px
-                        alt=""
-                      />
-                    </div>
-                    <span class="text-wrap">Man Cloth</span>
-                  </a>
-                  <a
-                    class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                    href="#"
-                  >
-                    <div class="menudrop-icon">
-                      <img
-                        src="img/icon/women.webp"
-                        width="50"
-                        height:50px
-                        alt=""
-                      />
-                    </div>
-                    <span class="text-wrap">Woman</span>
-                  </a>
-                  <a
-                    class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                    href="#"
-                  >
-                    <div class="menudrop-icon">
-                      <img
-                        src="img/icon/woman.webp"
-                        width="50"
-                        height:50px
-                        alt=""
-                      />
-                    </div>
-                    <span class="text-wrap">Girls</span>
-                  </a>
+ <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light p-0 m-0">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" class="brand-logo" alt="brand-logo" />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            id="toggleNavbar"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
-                  <!-- Nested Dropdown (Second Level) -->
-                  <div class="sec-dropdown" style="width: auto">
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <div
+                class="py-3 px-4 d-lg-none d-sm-flex close-navbar d-flex justify-content-end text-end w-100"
+                type="button"
+              >
+                <i class="fa-solid fa-xmark fa-2x"></i>
+              </div>
+              <li class="nav-item py-3 active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+
+              <li class="nav-item py-3">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item py-3">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+
+              <li class="nav-item py-3 dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Company <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+                <div class="dropdown-menu p-3" aria-labelledby="navbarDropdown">
+                  <div
+                    class="d-lg-flex justify-content-between d-sm-block d-block"
+                  >
                     <a
-                      class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
+                      class="dropdown-item d-flex flex-column align-items-center text-center"
                       href="#"
-                      d="nestedDropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
                     >
                       <div class="menudrop-icon">
-                        <img
-                          src="img/icon/children.webp"
-                          width="50"
-                          height:50px
-                          alt=""
-                        />
+                        <img src="img/icon/about.webp" alt="" />
                       </div>
-                      <span class="text-wrap">Children</span>
+                      <span class="ms-lg-0 ms-sm-1">About Us</span>
                     </a>
-                    <div
-                      class="sec-drop-menu py-2"
-                      aria-labelledby="nestedDropdown"
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center text-center"
+                      href="#"
                     >
-                      <div class="d-lg-flex d-sm-block d-block pb-3 w-100">
-                        <a
-                          class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                          href="#"
-                        >
-                          <div class="menudrop-icon">
-                            <img src="img/icon/tshirt.jpg" alt="" />
-                          </div>
-                          <span class="text-wrap">T-shirts</span>
-                        </a>
-                        <a
-                          class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                          href="#"
-                        >
-                          <div class="menudrop-icon">
-                            <img src="img/icon/jeans.png" alt="" />
-                          </div>
-                          <span class="text-wrap">Hoodies</span>
-                        </a>
-                        <a
-                          class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                          href="#"
-                        >
-                          <div class="menudrop-icon">
-                            <img src="img/icon/hoodies.png" alt="" />
-                          </div>
-                          <span class="text-wrap">Hoodies</span>
-                        </a>
-                        <a
-                          class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                          href="#"
-                        >
-                          <div class="menudrop-icon">
-                            <img src="img/icon/party.png" alt="" />
-                          </div>
-                          <span class="text-wrap">Party dresses</span>
-                        </a>
-                        <a
-                          class="dropdown-item d-lg-block d-sm-flex align-items-sm-center"
-                          href="#"
-                        >
-                          <div class="menudrop-icon">
-                            <img src="img/icon/romper.png" alt="" />
-                          </div>
-                          <span class="text-wrap"> Rompers </span>
-                        </a>
+                      <div class="menudrop-icon">
+                        <img src="img/icon/client.jpg" alt="" />
+                      </div>
+                      Client
+                    </a>
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center text-center"
+                      href="#"
+                    >
+                      <div class="menudrop-icon">
+                        <img src="img/icon/media.png" alt="" />
+                      </div>
+                      Media
+                    </a>
+
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center text-center"
+                      href="#"
+                    >
+                      <div class="menudrop-icon">
+                        <img src="img/icon/partner.webp" alt="" />
+                      </div>
+                      Partner
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- First Level Dropdown -->
+              <li class="nav-item py-3 dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Product <span><i class="fa-solid fa-angle-down"></i></span>
+                </a>
+                <div
+                  class="dropdown-menu p-3 w-auto"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <div
+                    class="d-lg-flex justify-content-between d-sm-block d-block"
+                  >
+                    <a
+                      class="dropdown-item dropdown-item-border d-flex flex-column align-items-center text-center"
+                      href="#"
+                    >
+                      <div class="menudrop-icon">
+                        <img src="img/icon/man.webp" alt="" />
+                      </div>
+                      <span class="text-wrap">Man Cloth</span>
+                    </a>
+                    <div class="sec-dropdown">
+                      <a
+                        class="dropdown-item dropdown-item-border d-flex flex-column align-items-center text-center"
+                        href="#"
+                      >
+                        <div class="menudrop-icon">
+                          <img src="img/icon/women.webp" alt="" />
+                        </div>
+                        <span class="text-wrap">Woman</span>
+                      </a>
+
+                      <div
+                        class="sec-drop-menu p-3"
+                        aria-labelledby="nestedDropdown"
+                      >
+                        <div class="d-lg-flex d-sm-block d-block w-100">
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/sheath.jpg" alt="" />
+                            </div>
+                            <span class="text-wrap">Sheath Dress</span>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/ball.webp" alt="" />
+                            </div>
+                            <span class="text-wrap">Ball Gown</span>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/shift.webp" alt="" />
+                            </div>
+                            <span class="text-wrap">Shift Dress</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a
+                      class="dropdown-item dropdown-item-border d-flex flex-column align-items-center text-center"
+                      href="#"
+                    >
+                      <div class="menudrop-icon">
+                        <img src="img/icon/woman.webp" alt="" />
+                      </div>
+                      <span class="text-wrap">Girls</span>
+                    </a>
+
+                    <!-- Nested Dropdown (Second Level) -->
+                    <div class="sec-dropdown">
+                      <a
+                        class="dropdown-item dropdown-item-border d-flex flex-column align-items-center text-center"
+                        href="#"
+                        d="nestedDropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <div class="menudrop-icon">
+                          <img
+                            src="img/icon/children.webp"
+                            width="50"
+                            height:50px
+                            alt=""
+                          />
+                        </div>
+                        <span class="text-wrap">Children</span>
+                      </a>
+                      <div
+                        class="sec-drop-menu"
+                        aria-labelledby="nestedDropdown"
+                      >
+                        <div class="d-lg-flex d-sm-block d-block p-3 w-100">
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/tshirt.jpg" alt="" />
+                            </div>
+                            <span class="text-wrap">T-shirts</span>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/jeans.png" alt="" />
+                            </div>
+                            <span class="text-wrap">Hoodies</span>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/hoodies.png" alt="" />
+                            </div>
+                            <span class="text-wrap">Hoodies</span>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/party.png" alt="" />
+                            </div>
+                            <span class="text-wrap">Party dresses</span>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-column align-items-center text-center"
+                            href="#"
+                          >
+                            <div class="menudrop-icon">
+                              <img src="img/icon/romper.png" alt="" />
+                            </div>
+                            <span class="text-wrap"> Rompers </span>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
+
+              <li class="nav-item py-3">
+                <a class="nav-link" href="#">Career</a>
+              </li>
+
+              <li class="nav-item py-3">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item py-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div
+              class="ml-auto text-start p-2 d-lg-none d-sm-block fixed-bottom"
+            >
+              <p class="mb-0">Customer Care</p>
+              <span class="fw-bold">1800-209-1215</span>
+            </div>
+          </div>
+          <!-- Customer Care Section -->
+          <div class="ml-auto text-center ms-5 p-2 d-none d-lg-block">
+            <p class="mb-0">Customer Care</p>
+            <span class="fw-bold">1800-209-1215</span>
+          </div>
+        </nav>
+      </div>
+    </header>
