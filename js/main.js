@@ -235,16 +235,10 @@
 })(jQuery);
 
 
-// document.querySelector(".navbar-toggler").addEventListener("click", function() {
-//     let navbar = document.querySelector("#navbarSupportedContent");
-//     navbar.classList.toggle("show");
-// });
+// manoj js
 
 
-// document.querySelector(".navbar-toggler").addEventListener("click", function() {
-//     let navbar = document.querySelector("#navbarSupportedContent");
-//     navbar.classList.toggle("collapse");
-// });
+
 document.querySelector(".navbar-toggler").addEventListener("click", function() {
     let navbar = document.querySelector("#navbarSupportedContent");
 
@@ -254,4 +248,24 @@ document.querySelector(".navbar-toggler").addEventListener("click", function() {
 document.querySelector(".close-navbar").addEventListener("click", function() {
     document.querySelector("#navbarSupportedContent").classList.remove("show");
 });
+
+
+
+// hero section
+
+
+function adjustHeroMargin() {
+  const navbar = document.querySelector(".header");
+  const heroSection = document.querySelector(".hero");
+
+  if (navbar && heroSection) {
+    let navHeight = navbar.offsetHeight;
+    heroSection.style.marginTop = navHeight + "px";
+  }
+}
+
+// Run on page load and window resize
+window.addEventListener("load", adjustHeroMargin);
+window.addEventListener("resize", adjustHeroMargin);
+
 
