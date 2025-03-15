@@ -589,13 +589,14 @@ ol {
 
 /* new header */
 .brand-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
-  aspect-ratio: 6/2;
+  aspect-ratio: 4/2;
 }
 
 .dropdown-menu {
   border: none;
+  min-width: 600px;
   margin-top: 0px;
   background-color: white;
   border-radius: 0px 0px 10px 10px;
@@ -612,12 +613,14 @@ ol {
 
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
+  justify-content: center;
 
 }
 
 .sec-drop-menu {
   display: none;
   position: relative;
+  width: 250px;
   transition: height 0.3s ease-in-out;
   -webkit-transition: height 0.3s ease-in-out;
   -moz-transition: height 0.3s ease-in-out;
@@ -625,12 +628,15 @@ ol {
   -o-transition: height 0.3s ease-in-out;
 }
 
+
+
 .sec-dropdown:hover .sec-drop-menu {
   display: block;
   position: absolute;
   background-color: white;
+  width: 100%;
   border-radius: 5px;
-  left: 0;
+  left:0;
   top: 90px;
   z-index: 55555;
   -webkit-border-radius: 5px;
@@ -684,6 +690,9 @@ ol {
 }
 
 .dropdown-item {
+  width: 120px;
+  /* background-color: #3263af; */
+  flex-wrap: wrap;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
