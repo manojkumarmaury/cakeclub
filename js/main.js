@@ -243,8 +243,6 @@ document
   .querySelector(".navbar-toggler")
   .addEventListener("click", function () {
     let navbar = document.querySelector("#navbarSupportedContent");
-
-    // Toggle only the 'show' class
     navbar.classList.toggle("show");
   });
 document.querySelector(".close-navbar").addEventListener("click", function () {
@@ -289,4 +287,52 @@ swiper.el.addEventListener("mouseenter", function () {
 swiper.el.addEventListener("mouseleave", function () {
   swiper.autoplay.start();
 });
+
+// product details js
+
+
+function adjustSubHeaderMargin() {
+  const navbar = document.querySelector(".header");
+  const subheader = document.querySelector(".sub-header");
+
+  if (navbar && subheader) {
+    let navHeight = navbar.offsetHeight;
+    subheader.style.marginTop = navHeight + "px";
+  }
+}
+
+window.addEventListener("load", adjustSubHeaderMargin);
+window.addEventListener("resize", adjustSubHeaderMargin);
+
+
+// function adjustSubHeaderMargin() {
+//   const navbar = document.querySelector(".header");
+//   const subheader = document.querySelector(".sub-header");
+
+//   if (navbar && subheader) {
+//     let navHeight = navbar.offsetHeight;
+
+//     // For responsive design based on screen size
+//     if (window.innerWidth < 576) {
+//       // Small screens (phones)
+//       subheader.style.marginTop = navHeight + "px";
+//     } else if (window.innerWidth >= 576 && window.innerWidth < 768) {
+//       // Medium screens (small tablets)
+//       subheader.style.marginTop = navHeight + "px";
+//     } else if (window.innerWidth >= 768 && window.innerWidth < 992) {
+//       // Large screens (tablets)
+//       subheader.style.marginTop = navHeight + "px";
+//     } else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
+//       // Extra Large screens (laptops)
+//       subheader.style.marginTop = navHeight + "px";
+//     } else {
+//       // Very Large screens (desktop)
+//       subheader.style.marginTop = navHeight + "px";
+//     }
+//   }
+// }
+
+window.addEventListener("load", adjustSubHeaderMargin);
+window.addEventListener("resize", adjustSubHeaderMargin);
+
 
