@@ -1,10 +1,53 @@
 :root {
   --primary: #75A85E;
+  --section-color: #FDF3EA;
+  --white: #FFFFFF;
 }
 
+/* all section color */
+.header {
+  background-color: var(--white);
+}
 
+.why-choose {
+  background-color: var(--white);
+}
+
+.about {
+  background-color: var(--section-color);
+}
+
+.categories {
+  background-color: var(--white);
+}
+
+.product {
+  background-color: var(--section-color);
+}
+
+.class {
+  background-color: var(--white);
+}
+
+.testimonial {
+  background-color: var(--section-color);
+}
+
+.instagram {
+  background-color: var(--white);
+}
+
+.our-brand-section{
+  background-color: var(--white);
+}
+
+/* all section end */
 
 /* header */
+.header {
+  background-color: var(--white);
+}
+
 .navbar-brand {
   display: inline-block;
   width: 200px;
@@ -166,6 +209,7 @@
 /* end hero section */
 
 /* start why choose */
+
 .choose__main__card {
   padding: 10px;
   text-align: justify;
@@ -260,3 +304,37 @@
 }
 
 /* end why choose */
+
+
+/* Our Brand Section Begin */
+.our-brand span {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/1;
+  object-fit: contain;
+}
+
+
+/* End Our Brand Section */
