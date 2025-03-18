@@ -42,6 +42,19 @@
 }
 
 /* all section end */
+.s-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+
 
 /* header */
 .header {
@@ -408,12 +421,6 @@
   font-size: 0.7rem;
 }
 
-.product_feature_heading {
-  color: #000000;
-  font: 0.9rem;
-  font-weight: 600;
-}
-
 .feature-text {
   font-size: 0.8rem;
   font-weight: 500;
@@ -424,12 +431,6 @@
   height: 1px;
   color: red;
   font-weight: 100;
-}
-
-.product_quantity_heading {
-  color: #000000;
-  font: 0.9rem;
-  font-weight: 600;
 }
 
 .quantity-btn {
@@ -506,13 +507,6 @@
   border: 0px;
 }
 
-.product-size-heading {
-  color: #000000;
-  font: 0.9rem;
-  font-weight: 600;
-}
-
-
 .size-box {
   display: flex;
   padding: 10px 0px;
@@ -554,13 +548,94 @@ input.form-control:active {
 
 
 .delivery-input {
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
-.app-offer-heading {
+.offer-div {
+  width: 100%;
+  min-height: 120px;
+  background-color: var(--section-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.offer-brand {
+  width: 200px;
+  min-height: 50px;
+}
+
+.offer-brand img {
+  width: 100px;
+  height: auto;
+  aspect-ratio: 2/1;
+}
+
+.offer-more a {
+  color: red;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.but-in-bulk span {
+  font-size: 0.9rem;
+}
+
+.bulk-btn {
+  color: red;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.grand-total h5 {
   color: #000000;
-  font: 0.9rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
+/* feature review section began */
+.feature-review {
+  background-color: var(--section-color);
+}
+
+.review {
+  /* background-color: var(--section-color); */
+  background-color: #35cde1;
+}
+
+.review-write {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 5px;
+  background-color: #1af816;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.review-write textarea {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.review-write-btn{
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: #000000;
+  border-radius: 30px;
+  font-weight: 600;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
 /* end product_details.html page css */
