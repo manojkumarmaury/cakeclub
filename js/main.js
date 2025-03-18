@@ -323,3 +323,28 @@ window.addEventListener("load", adjustProductDetailsMargin);
 window.addEventListener("resize", adjustProductDetailsMargin);
 
 
+// scroll top show div 
+
+let lastScrollTop = 0;
+let navBar = document.getElementById("navBar");
+let headerShortDetails = document.getElementById("header_short_details"); 
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+ 
+  if (currentScroll > lastScrollTop) {
+    navBar.style.display = "none"; 
+    headerShortDetails.style.display = "block"; 
+  } else {
+    
+    navBar.style.display = "block"; 
+    headerShortDetails.style.display = "none"; 
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+});
+
+
+
+

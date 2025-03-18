@@ -357,8 +357,75 @@
 
 /* product_details.html page css*/
 .sub-header {
-  background-color: var(--section-color);
 
+  background-color: var(--section-color);
+  z-index: 2;
+}
+
+#header_short_details {
+  display: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+
+
+.header-price {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.header-mrp {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  margin-left: 2px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+.header-taxes {
+  font-size: 0.7rem;
+  margin-left: 2px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+.header-off {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.add-to-cart, .buy-now {
+  padding: 3px 10px;
+  border-radius: 30px;
+  border: 1px solid var(--primary);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.add-to-cart {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.add-to-cart:hover {
+  color: var(--primary);
+}
+
+.buy-now {
+  margin-left: 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .product-img {
@@ -664,9 +731,10 @@ input.form-control:active {
   -o-border-radius: 5px;
 }
 
-.product-name a{
+.product-name a {
   color: #000000;
 }
+
 .product-img-box {
   width: 300px;
   height: auto;
