@@ -305,34 +305,21 @@ window.addEventListener("load", adjustSubHeaderMargin);
 window.addEventListener("resize", adjustSubHeaderMargin);
 
 
-// function adjustSubHeaderMargin() {
-//   const navbar = document.querySelector(".header");
-//   const subheader = document.querySelector(".sub-header");
+function adjustProductDetailsMargin(){
+  const navbar = document.querySelector(".header");
+  const subheader = document.querySelector(".sub-header");
+  const productDiv = document.querySelector(".product-details");
+  if (navbar && subheader && productDiv){
+    let nHeight = navbar.offsetHeight;
+    let sHeight  = subheader.offsetHeight;
 
-//   if (navbar && subheader) {
-//     let navHeight = navbar.offsetHeight;
+    let tHeight = nHeight + sHeight;
 
-//     // For responsive design based on screen size
-//     if (window.innerWidth < 576) {
-//       // Small screens (phones)
-//       subheader.style.marginTop = navHeight + "px";
-//     } else if (window.innerWidth >= 576 && window.innerWidth < 768) {
-//       // Medium screens (small tablets)
-//       subheader.style.marginTop = navHeight + "px";
-//     } else if (window.innerWidth >= 768 && window.innerWidth < 992) {
-//       // Large screens (tablets)
-//       subheader.style.marginTop = navHeight + "px";
-//     } else if (window.innerWidth >= 992 && window.innerWidth < 1200) {
-//       // Extra Large screens (laptops)
-//       subheader.style.marginTop = navHeight + "px";
-//     } else {
-//       // Very Large screens (desktop)
-//       subheader.style.marginTop = navHeight + "px";
-//     }
-//   }
-// }
+    productDiv.style.marginTop = tHeight + "px"
+  }
+}
 
-window.addEventListener("load", adjustSubHeaderMargin);
-window.addEventListener("resize", adjustSubHeaderMargin);
+window.addEventListener("load", adjustProductDetailsMargin);
+window.addEventListener("resize", adjustProductDetailsMargin);
 
 

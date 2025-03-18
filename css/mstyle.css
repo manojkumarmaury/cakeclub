@@ -600,9 +600,21 @@ input.form-control:active {
   background-color: var(--section-color);
 }
 
+
+/* technical specification */
+.technical-specification {
+  background-color: var(--white);
+
+}
+
+.table-row {
+  border-bottom: 0.5px solid #000000;
+}
+
+/* review write */
 .review {
-  /* background-color: var(--section-color); */
-  background-color: #35cde1;
+  background-color: var(--section-color);
+
 }
 
 .review-write {
@@ -627,7 +639,7 @@ input.form-control:active {
   -o-border-radius: 5px;
 }
 
-.review-write-btn{
+.review-write-btn {
   padding: 10px 20px;
   background-color: var(--primary);
   color: #000000;
@@ -638,4 +650,90 @@ input.form-control:active {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
+
+/* may-also-like */
+.may-also-like {
+  background-color: var(--white);
+}
+
+.product {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.product-name a{
+  color: #000000;
+}
+.product-img-box {
+  width: 300px;
+  height: auto;
+}
+
+.product-img-box img {
+  width: 300px;
+  height: auto;
+  aspect-ratio: 2/2;
+  object-fit: cover;
+  background-size: contain;
+}
+
+.view-detail-btn, .add-to-cart-btn {
+  padding: 10px 20px;
+  color: #000000;
+  font-weight: 500;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.product-mrp {
+  color: red;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.taxes {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.old-product-mrp {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+}
+
+.old-product-taxes {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+
+}
+
+.old-product-price-offer {
+  color: red;
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+
+.view-detail-btn {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.view-detail-btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.add-to-cart-btn {
+  background-color: var(--primary);
+}
+
 /* end product_details.html page css */
