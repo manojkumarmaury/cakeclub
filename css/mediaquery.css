@@ -4,7 +4,7 @@
     max-width: 1170px;
   }
 
-  
+
 }
 
 /* Medium Device = 1200px */
@@ -163,6 +163,14 @@
   }
 
   /* end why-choose */
+  /* product details  */
+  #header_short_details {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
 
 }
 
@@ -452,6 +460,14 @@
   }
 
   /* end why-choose */
+  /* product details  */
+  #header_short_details {
+    display: none;
+  }
+
+  #sub_heading {
+    display: block;
+  }
 
 }
 
@@ -1083,6 +1099,14 @@
   }
 
   /* end header */
+  /* product details  */
+  #header_short_details {
+    display: none;
+  }
+
+  #sub_heading {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1213,6 +1237,15 @@
   }
 
   /* end why-choose */
+
+  /* product details  */
+  #header_short_details {
+    display: none;
+  }
+
+  #sub_heading {
+    display: block;
+  }
 }
 
 /* Small Device = 320px */
@@ -1448,4 +1481,13 @@
   }
 
   /* end why-choose */
+
+  /* product details  */
+  #header_short_details {
+    display: none;
+  }
+
+  #sub_heading {
+    display: block;
+  }
 }

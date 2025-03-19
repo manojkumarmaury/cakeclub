@@ -325,24 +325,37 @@ window.addEventListener("resize", adjustProductDetailsMargin);
 
 // scroll top show div 
 
+
+
+
 let lastScrollTop = 0;
-let navBar = document.getElementById("navBar");
-let headerShortDetails = document.getElementById("header_short_details"); 
+let navBar = document.getElementById("sub_heading");
+let headerShortDetails = document.getElementById("header_short_details");
+
+navBar.style.opacity = "1";
+navBar.style.visibility = "visible";
+headerShortDetails.style.opacity = "0";
+headerShortDetails.style.visibility = "hidden";
 
 window.addEventListener("scroll", function () {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
- 
   if (currentScroll > lastScrollTop) {
-    navBar.style.display = "none"; 
-    headerShortDetails.style.display = "block"; 
+    navBar.style.opacity = "0"; 
+    navBar.style.top = "0%";
+    navBar.style.visibility = "hidden"; 
+    headerShortDetails.style.opacity = "1"; 
+    headerShortDetails.style.visibility = "visible"; visible
   } else {
     
-    navBar.style.display = "block"; 
-    headerShortDetails.style.display = "none"; 
+    navBar.style.opacity = "1"; 
+    navBar.style.top = "0%";
+    navBar.style.visibility = "visible"; 
+    headerShortDetails.style.opacity = "0"; 
+    headerShortDetails.style.visibility = "hidden"; 
   }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
 });
 
 
