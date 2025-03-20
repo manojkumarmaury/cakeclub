@@ -326,38 +326,20 @@ window.addEventListener("resize", adjustProductDetailsMargin);
 // scroll top show div 
 
 
-
-
-let lastScrollTop = 0;
-let navBar = document.getElementById("sub_heading");
-let headerShortDetails = document.getElementById("header_short_details");
-
-navBar.style.opacity = "1";
-navBar.style.visibility = "visible";
-headerShortDetails.style.opacity = "0";
-headerShortDetails.style.visibility = "hidden";
-
 window.addEventListener("scroll", function () {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  const element = document.getElementById("header_short_details");
+  const element1 = document.getElementById("product_feature_nav");
 
-  if (currentScroll > lastScrollTop) {
-    navBar.style.opacity = "0"; 
-    navBar.style.top = "0%";
-    navBar.style.visibility = "hidden"; 
-    headerShortDetails.style.opacity = "1"; 
-    headerShortDetails.style.visibility = "visible"; visible
-  } else {
-    
-    navBar.style.opacity = "1"; 
-    navBar.style.top = "0%";
-    navBar.style.visibility = "visible"; 
-    headerShortDetails.style.opacity = "0"; 
-    headerShortDetails.style.visibility = "hidden"; 
-  }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+  // Use requestAnimationFrame for smoother scroll handling
+  requestAnimationFrame(function () {
+    if (window.scrollY > 50) {
+      element.classList.add("show");
+      element1.classList.add("hide");
+    } else {
+      element.classList.remove("show");
+      element1.classList.remove("hide");
+    }
+  });
 });
-
-
 
 
