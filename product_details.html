@@ -353,29 +353,26 @@
 
     <section class="sub-header fixed-top">
       <div
-        class="container bg-sucess header_short_details py-3"
+        class="container-fluid bg-sucess header_short_details py-3 bg-white"
         id="header_short_details"
       >
         <div class="row px-0 m-0">
-          <div class="col-md-5">
-            <h5 class="heading">Reo Tejas ES Ceiling Fan</h5>
+          <div class="col-md-6">
+            <h5 class="heading">Reo Utsav ES Ceiling</h5>
           </div>
-          <div class="col-md-7 p-0 m-0 d-flex justify-content-between">
+          <div class="col-md-6 p-0 m-0 d-flex justify-content-between">
             <div class="top-price">
-              <article>
+              <article class="d-flex align-items-center">
                 <span class="header-price"
-                  ><i class="fa-solid fa-indian-rupee-sign"></i>
-                  <span class="ms-2"> 1 710.00</span></span
+                  ><i class="fa-solid fa-indian-rupee-sign h-rupee"></i>
+                  <span class="ms-2"> 1 690.00</span></span
                 >
-                <span class="ms-5">
-                  <span class="header-mrp"
-                    >MRP
-                    <span
-                      ><i class="fa-solid fa-indian-rupee-sign"></i>
-                      3600.00</span
-                    ></span
+                <span class="ms-5 d-flex align-items-center">
+                  <span class="header-mrp">MRP</span>
+                  <span class="mrp-price"
+                    ><i class="fa-solid fa-indian-rupee-sign"></i> 3600.00</span
                   ><span class="header-taxes">{incl. of all taxes}</span>
-                  <span class="header-off">44 % Off</span>
+                  <span class="header-off">43 % Off</span>
                 </span>
               </article>
             </div>
@@ -387,9 +384,12 @@
         </div>
       </div>
 
-      <div class="container py-2 product_feature_nav" id="product_feature_nav">
+      <div
+        class="container-fluid py-2 product_feature_nav"
+        id="product_feature_nav"
+      >
         <div class="row py-1 m-0">
-          <nav class="navbar p-0 m-0">
+          <nav class="navbar p-0 m-0 product_details_navbar">
             <!---id navBar-->
             <ul class="nav p-0 m-0">
               <li class="nav-item border-0">
@@ -414,13 +414,13 @@
 
     <!-- product details section began-->
     <section class="product-details py-4">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row p-0 m-0">
           <div class="col-md-6 col-12 p-0 m-0">
             <div class="product-main-img">
               <div class="product-img-fixed-box">
                 <img
-                  src="img/shop/details/frctj1ssmb48_1.webp"
+                  src="img/shop/details/frcut1sbrn36.webp"
                   class="img-img"
                   alt=""
                 />
@@ -432,8 +432,8 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-12  p-1">
-            <div class="bg-white p-4">
+          <div class="col-md-6 col-12 p-1">
+            <div class="bg-white p-4 product-content">
               <article class="">
                 <!-- Product Name -->
                 <div class="d-flex align-items-center justify-content-between">
@@ -444,11 +444,11 @@
                   ></span>
                 </div>
                 <!-- product size and product Number -->
-                <div class="d-felx flex-column mt-1">
-                  <span class="product_size text-secondary"
+                <div class="d-felx flex-column">
+                  <span class="product_size"
                     >900 mm Sweep Brown</span
                   ><br />
-                  <span class="product_num mt-2 text-secondary"
+                  <span class="product_num mt-2"
                     >FRCUT1SBRN36</span
                   >
                 </div>
@@ -459,10 +459,10 @@
                     <!-- price -->
                     <strong class="pe-3 real-price"
                       ><i class="fa-solid fa-indian-rupee-sign"></i
-                      ><span class="px-1">1600</span></strong
+                      ><span class="px-1">1 690</span></strong
                     >
                     <!-- old price -->
-                    <span class="old-price-box mx-3 text-secondary">
+                    <span class="old-price-box mx-3 ">
                       <span class="old-price"
                         >MRP.
                         <span>
@@ -473,13 +473,13 @@
                       <span class="mx-2 price-tax">{incl. of all taxes}</span>
                     </span>
 
-                    <span class="text-danger mx-3">43% Off</span>
+                    <span class="off-43 mx-3">43% Off</span>
                   </article>
                 </div>
 
                 <!-- Product Net Quantity -->
                 <div class="product-net-quantity mt-4">
-                  <span>Net Quantity: <strong class="mx-3">1N</strong></span>
+                  <span>Net Quantity: <strong class="mx-3">1 N</strong></span>
                 </div>
 
                 <!-- product feature -->
@@ -624,25 +624,30 @@
       </div>
     </section>
 
+
+
+
+    <!-- feature -->
     <section class="py-5  feature-review">
-      <div class="container">
+      <div class="container-fluid">
         <h2 class="s-heading mb-5">Feature</h2>
         <div class="row">
           <div class="col-md-6 col-6">
-            <h5 class="heading mb-4">Look</h5>
+            <h5 class="heading mb-3">Look</h5>
             <span>Simple and elegant design</span>
           </div>
           <div class="col-md-6 col-6">
-            <h5 class="heading mb-4">Star Rating</h5>
+            <h5 class="heading mb-3">Star Rating</h5>
             <span>1 Star</span>
           </div>
         </div>
       </div>
     </section>
 
+    
     <!-- technical specification -->
     <section class="technical-specification py-5">
-      <div class="container">
+      <div class="container-fluid">
         <h5 class="s-heading">Technical Specification</h5>
         <div class="row mt-4">
           <div class="col-md-6 col-12">
@@ -723,10 +728,15 @@
       </div>
     </section>
 
+
+      
+
+  
+
     <!-- review -->
     <section class="review py-5">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="row px-3">
           <h5 class="s-heading">Customer Reviews</h5>
           <div class="review-write mt-4">
             <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -738,7 +748,7 @@
 
     <!-- May Also Like -->
     <section class="may-also-like py-5">
-      <div class="container">
+      <div class="container-fluid">
         <h5 class="heading">You may also like</h5>
         <div class="row mt-5 d-flex justify-content-center gap-4">
           <div class="p-2">
@@ -862,6 +872,7 @@
     </section>
     <!-- product details section end -->
 
+
     <!-- Our Brand Section Begin -->
     <section class="our-brand-section py-5 bg-white">
       <div class="container px-5">
@@ -900,7 +911,7 @@
 
     <!-- Map Begin -->
     <div class="map">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-7">
             <div class="map__inner">
@@ -929,7 +940,7 @@
 
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="footer__widget">
@@ -973,7 +984,7 @@
         </div>
       </div>
       <div class="copyright">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-7">
               <p class="copyright__text text-white">
