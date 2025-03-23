@@ -919,3 +919,297 @@ input.form-control:active {
 }
 
 /* end product_details.html page css */
+
+
+
+/* --------------------------Our product Home Page------------------------------------------------- */
+
+.OurProdutHero {
+  width: 100%;
+  min-height: 500px;
+}
+
+.OurProdutHero-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OurProdutHero-slide img {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  /* aspect-ratio: 16 / 9; */
+  object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FFFFFF;
+  font-style: 15px !important;
+}
+
+.swiper-button-next {
+  margin-right: 50px;
+  font-style: 15px !important;
+}
+
+.swiper-button-prev {
+  margin-left: 50px;
+  font-style: 15px !important;
+}
+
+.swiper-pagination {
+  color: #FFFFFF;
+  width: 50px;
+}
+
+/* -----------OurProductHome------------------------------------ */
+.OurProductHome_Heading {
+  color: #2F2F2F;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+  word-spacing: -1px;
+  font-size: 2.9rem;
+}
+
+.ourProductHome_btn_About {
+  padding: 12px 30px;
+  background-color: #000000;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.ourProductHome_btn_About:hover {
+  color: #FFFFFF;
+}
+
+/* Our Product section */
+.OurProductHome-LEDLight {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  background: linear-gradient(to right, #FFCA2D, #FFDB76);
+}
+
+.LED_Heading {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2F2F2F;
+}
+
+
+.led-txt {
+  font-size: 1.1rem;
+  color: #6F6F6F;
+}
+
+.see_all_LED_btn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.see_all_LED_btn:hover {
+  color: #FFFFFF;
+}
+
+.led_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.led_img_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+}
+
+.led-img {
+  margin-top: 30px;
+  min-height: 120px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+
+.led_div:hover .led-img {
+  margin-top: 0px;
+}
+
+
+/* ourProductHome_Switches Section */
+
+.Switchgear_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.Switchgear_img_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+}
+
+.Switchgear-img {
+  margin-top: 30px;
+  min-height: 120px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.Switchgear_div:hover .Switchgear-img {
+  margin-top: 0px;
+}
+
+/*  */
+.OurProductSwitchAcc {
+  background: linear-gradient(to right, #4CBDFF, #D0EEFF);
+}
+
+
+/* --------trust --------------------- */
+.video_trust {
+  padding-right: 50px;
+}
+
+.video_trust video {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.trudt_circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #E10000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.trust_text {
+  font-size: 0.9rem;
+  color: #2F2F2F;
+  margin-top: 5px;
+}
+
+.sing_div {
+  width: 100%;
+  min-height: 100px;
+}
+
+.sing_img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* grouth */
+.OurProductGrowth {
+  background-color: #FCB946;
+}
+
+.like_circle {
+  width: 72px;
+  min-height: 72px;
+  border-radius: 50%;
+  background-color: #815200;
+  color: #FFFFFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.growth_count {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.plush_sign {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.growth_text {
+  font-size: 1.5rem;
+  font-size: 500;
+  color: #FFFFFF;
+}
+
+/* map section */
+.world_map {
+  width: 100%;
+  height: auto;
+}
+
+.world_map img {
+  width: 100%;
+  height: 100dvh;
+}
+
+
+/* OurJourney */
+.OurJoury_main {
+  width: 100%;
+  height: 300px;
+  background-color: #4D557E;
+}
+
+.img-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.img-slide .OurJourney_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+  object-fit: cover;
+
+}

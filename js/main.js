@@ -290,7 +290,6 @@ swiper.el.addEventListener("mouseleave", function () {
 
 // product details js
 
-
 function adjustSubHeaderMargin() {
   const navbar = document.querySelector(".header");
   const subheader = document.querySelector(".sub-header");
@@ -304,27 +303,24 @@ function adjustSubHeaderMargin() {
 window.addEventListener("load", adjustSubHeaderMargin);
 window.addEventListener("resize", adjustSubHeaderMargin);
 
-
-function adjustProductDetailsMargin(){
+function adjustProductDetailsMargin() {
   const navbar = document.querySelector(".header");
   const subheader = document.querySelector(".sub-header");
   const productDiv = document.querySelector(".product-details");
-  if (navbar && subheader && productDiv){
+  if (navbar && subheader && productDiv) {
     let nHeight = navbar.offsetHeight;
-    let sHeight  = subheader.offsetHeight;
+    let sHeight = subheader.offsetHeight;
 
     let tHeight = nHeight + sHeight;
 
-    productDiv.style.marginTop = tHeight + "px"
+    productDiv.style.marginTop = tHeight + "px";
   }
 }
 
 window.addEventListener("load", adjustProductDetailsMargin);
 window.addEventListener("resize", adjustProductDetailsMargin);
 
-
-// scroll top show div 
-
+// scroll top show div
 
 window.addEventListener("scroll", function () {
   const element = document.getElementById("header_short_details");
@@ -342,4 +338,54 @@ window.addEventListener("scroll", function () {
   });
 });
 
+// Our Product Home Page
+
+function adjustProductHomeMargin() {
+  const navbar = document.querySelector(".header");
+  const ourProductHome_Hero_Section = document.querySelector(".Our_Product_Hero_Section");
+
+  if (navbar && ourProductHome_Hero_Section) {
+    let navHeight = navbar.offsetHeight;
+    ourProductHome_Hero_Section.style.marginTop = navHeight + "px";
+  }
+}
+
+window.addEventListener("load", adjustProductHomeMargin);
+window.addEventListener("resize", adjustProductHomeMargin);
+
+
+
+// hero section ourproducthome
+ var swiper = new Swiper(".myOurProductSlider", {
+   slidesPerView: 1,
+   spaceBetween: 10,
+   centeredSlides: true,
+   autoplay: {
+     delay: 3000,
+     disableOnInteraction: false,
+   },
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+   loop: true,
+ });
+
+//  Our Journey
+
+ var swiper = new Swiper(".myOurJourney", {
+   slidesPerView: 2,
+   spaceBetween: 0,
+   loop: true,
+   centeredSlides: false,
+   autoplay: {
+     delay: 2500,
+     disableOnInteraction: false,
+   },
+  
+ });
 
